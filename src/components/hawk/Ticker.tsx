@@ -1,13 +1,13 @@
 const items = [
-  { sym: "$HAWK", val: "+428.6%", up: true },
-  { sym: "WHALE TX", val: "12.4 SOL → bonded", up: true },
+  { sym: "$THAI", val: "Live on Base", up: true },
+  { sym: "AGENT", val: "scanning Base mainnet", up: true },
   { sym: "ALPHA SIGNAL", val: "92.4% confidence", up: true },
-  { sym: "$BTC", val: "+1.8%", up: true },
-  { sym: "$ETH", val: "+0.9%", up: true },
-  { sym: "$SOL", val: "+3.2%", up: true },
-  { sym: "MARKET SCAN", val: "1,284 wallets / sec", up: true },
+  { sym: "$DEGEN", val: "+42.8%", up: true },
+  { sym: "$BRETT", val: "+18.4%", up: true },
+  { sym: "$MOCHI", val: "+64.3%", up: true },
+  { sym: "MARKET SCAN", val: "1,284 tokens / min", up: true },
   { sym: "RUG DETECTED", val: "blocked", up: false },
-  { sym: "$HAWK HOLDERS", val: "TBD", up: true },
+  { sym: "GATE", val: "100,000 $THAI required", up: true },
 ];
 
 export const Ticker = () => {

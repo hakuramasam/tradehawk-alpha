@@ -2,10 +2,10 @@ import { Section } from "./Section";
 import { Crown, Egg, Swords, Users } from "lucide-react";
 
 const phases = [
-  { phase: "Phase 01", name: "Nest", icon: Egg, items: ["Stealth launch on Pump.fun", "Build the lore + brand", "First 1,000 hawks land", "Logo, site, socials live"], status: "active" },
-  { phase: "Phase 02", name: "Hunt", icon: Swords, items: ["Whale tracker bot v1", "CEX listing chatter", "Influencer drops + raids", "Bonding curve cleared"], status: "soon" },
-  { phase: "Phase 03", name: "Swarm", icon: Users, items: ["10K+ holder swarm", "Holder-only alpha terminal", "Cross-chain expansion (Base)", "Major listings"], status: "soon" },
-  { phase: "Phase 04", name: "Dominate", icon: Crown, items: ["TradeHawk AI agent v2", "DAO + treasury control", "Top of CT meme charts", "The sky belongs to us"], status: "soon" },
+  { phase: "Phase 01", name: "Nest", icon: Egg, items: ["$THAI fair-launched on Clanker (Base)", "Brand, site, agent skeleton live", "Wallet gate at 100K $THAI", "First 1,000 hunters onboarded"], status: "active" },
+  { phase: "Phase 02", name: "Hunt", icon: Swords, items: ["Live Base trending feed", "3 strategies in production", "SIWE auth + holder backend", "One-click 0x swap on Base"], status: "soon" },
+  { phase: "Phase 03", name: "Swarm", icon: Users, items: ["Auto-execute mode w/ risk caps", "Smart-money wallet copy v2", "Narrative-surge NLP layer", "Holder telegram alpha pings"], status: "soon" },
+  { phase: "Phase 04", name: "Dominate", icon: Crown, items: ["Multi-chain (BSC, Solana)", "Strategy marketplace", "$THAI staking + revenue share", "The agent runs the timeline"], status: "soon" },
 ];
 
 export const Roadmap = () => (

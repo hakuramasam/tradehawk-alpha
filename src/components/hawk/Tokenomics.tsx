@@ -1,17 +1,17 @@
 import { Section } from "./Section";
-import { Copy, ExternalLink } from "lucide-react";
+import { Copy, ExternalLink, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-
-const CONTRACT = "TBA — bonding on Pump.fun";
+import { CLANKER_URL, THAI_CONTRACT_ADDRESS } from "@/lib/thai";
+import { Link } from "react-router-dom";
 
 const stats = [
-  { label: "Supply", value: "1,000,000,000", suffix: "$HAWK" },
-  { label: "Tax", value: "0 / 0", suffix: "no rugs, no kings" },
-  { label: "Liquidity", value: "Burned", suffix: "🔥 forever" },
-  { label: "Hawk Treasury", value: "5%", suffix: "for hunts & ops" },
-  { label: "Community", value: "85%", suffix: "the swarm eats first" },
-  { label: "Team", value: "10%", suffix: "locked & vested" },
+  { label: "Ticker", value: "$THAI", suffix: "TradeHawk AI" },
+  { label: "Chain", value: "Base", suffix: "mainnet (8453)" },
+  { label: "Launchpad", value: "Clanker", suffix: "fair launch" },
+  { label: "Access gate", value: "100,000", suffix: "$THAI to unlock agent" },
+  { label: "Tax", value: "0 / 0", suffix: "no rent, no kings" },
+  { label: "Utility", value: "Agent access", suffix: "+ holder-only signals" },
 ];
 
 export const Tokenomics = () => (
@@ -32,15 +32,27 @@ export const Tokenomics = () => (
     <div id="buy" className="relative p-6 md:p-8 rounded-2xl border border-secondary/40 bg-gradient-to-br from-secondary/10 to-primary/5 backdrop-blur-sm">
       <div className="flex flex-col md:flex-row md:items-center gap-4 justify-between">
         <div className="space-y-1 min-w-0">
-          <div className="text-xs font-mono uppercase tracking-widest text-secondary-glow">Contract Address</div>
-          <div className="font-mono text-sm md:text-base text-foreground truncate">{CONTRACT}</div>
+          <div className="text-xs font-mono uppercase tracking-widest text-secondary-glow">Contract Address · Base</div>
+          <div className="font-mono text-xs md:text-sm text-foreground truncate">{THAI_CONTRACT_ADDRESS}</div>
         </div>
-        <div className="flex gap-2 shrink-0">
-          <Button variant="outlineHawk" size="sm" onClick={() => { navigator.clipboard.writeText(CONTRACT); toast("Copied. The hawk is watching."); }}>
-            <Copy /> Copy
+        <div className="flex flex-wrap gap-2 shrink-0">
+          <Button
+            variant="outlineHawk"
+            size="sm"
+            onClick={() => {
+              navigator.clipboard.writeText(THAI_CONTRACT_ADDRESS);
+              toast("Contract copied. The hawk is watching.");
+            }}
+          >
+            <Copy /> Copy CA
           </Button>
           <Button variant="hawk" size="sm" asChild>
-            <a href="https://pump.fun" target="_blank" rel="noopener noreferrer">Buy on Pump.fun <ExternalLink /></a>
+            <a href={CLANKER_URL} target="_blank" rel="noopener noreferrer">
+              Buy on Clanker <ExternalLink />
+            </a>
+          </Button>
+          <Button variant="outlineHawk" size="sm" asChild>
+            <Link to="/app"><Rocket /> Launch Agent</Link>
           </Button>
         </div>
       </div>

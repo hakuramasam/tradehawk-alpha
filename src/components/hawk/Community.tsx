@@ -1,10 +1,11 @@
 import { Section } from "./Section";
 import { Send, Twitter, Rocket } from "lucide-react";
+import { CLANKER_URL } from "@/lib/thai";
 
 const links = [
-  { name: "X / Twitter", handle: "@tradehawk", desc: "Raids, alpha drops, hawk-coded shitposts.", icon: Twitter, href: "https://x.com" },
-  { name: "Telegram", handle: "t.me/tradehawk", desc: "The nest. 24/7 swarm comms. Don't get rekt alone.", icon: Send, href: "https://t.me" },
-  { name: "Pump.fun", handle: "/HAWK", desc: "Ape the bonding curve. Liquidity burns at the top.", icon: Rocket, href: "https://pump.fun" },
+  { name: "X / Twitter", handle: "@tradehawk_ai", desc: "Agent kills, alpha drops, signal previews.", icon: Twitter, href: "https://x.com" },
+  { name: "Telegram", handle: "t.me/tradehawk_ai", desc: "Holder lounge + live signal pings. 24/7 swarm comms.", icon: Send, href: "https://t.me" },
+  { name: "Clanker", handle: "$THAI on Base", desc: "Buy $THAI on Base mainnet. Hold 100K to unlock the agent.", icon: Rocket, href: CLANKER_URL },
 ];
 
 export const Community = () => (
