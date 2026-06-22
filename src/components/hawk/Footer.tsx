@@ -5,10 +5,10 @@ export const Footer = () => (
     <div className="container py-12 grid md:grid-cols-3 gap-8">
       <div className="space-y-3">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="TradeHawk logo" width={36} height={36} className="w-9 h-9" loading="lazy" />
-          <span className="font-display font-black text-lg">TRADE<span className="text-gradient-gold">HAWK</span></span>
+          <img src={logo} alt="TradeHawk AI logo" width={36} height={36} className="w-9 h-9" loading="lazy" />
+          <span className="font-display font-black text-lg">TRADE<span className="text-gradient-gold">HAWK AI</span></span>
         </div>
-        <p className="text-sm text-muted-foreground max-w-xs">The autonomous AI predator hunting alpha across crypto markets. $HAWK on Pump.fun.</p>
+        <p className="text-sm text-muted-foreground max-w-xs">Autonomous AI trading agent on Base mainnet. Gated by $THAI. Hunting trending alpha 24/7.</p>
       </div>
       <div>
         <div className="font-display font-bold mb-3 text-sm uppercase tracking-widest">Explore</div>
@@ -20,7 +20,7 @@ export const Footer = () => (
       </div>
       <div>
         <div className="font-display font-bold mb-3 text-sm uppercase tracking-widest">Disclaimer</div>
-        <p className="text-xs text-muted-foreground leading-relaxed">$HAWK is a memecoin built for entertainment and community. Nothing on this site is financial advice. Crypto is risky. The hawk is hungry. DYOR.</p>
+        <p className="text-xs text-muted-foreground leading-relaxed">TradeHawk AI provides on-chain analytics and trade execution tooling. Nothing here is financial advice. Crypto trading is high-risk and you can lose money. DYOR.</p>
       </div>
     </div>
     <div className="border-t border-primary/10 py-5">

@@ -1,6 +1,8 @@
 import logo from "@/assets/hawk-logo.png";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Rocket } from "lucide-react";
 
 const links = [
   { href: "#lore", label: "Lore" },
@@ -25,7 +27,7 @@ export const Nav = () => {
         <a href="#top" className="flex items-center gap-2 group">
           <img src={logo} alt="TradeHawk logo" width={40} height={40} className="w-10 h-10 group-hover:rotate-12 transition-transform" />
           <span className="font-display font-black text-xl tracking-tight">
-            TRADE<span className="text-gradient-gold">HAWK</span>
+            TRADE<span className="text-gradient-gold">HAWK AI</span>
           </span>
         </a>
         <div className="hidden lg:flex items-center gap-7">
@@ -34,7 +36,7 @@ export const Nav = () => {
           ))}
         </div>
         <Button asChild variant="hawk" size="sm">
-          <a href="#buy">Buy $HAWK</a>
+          <Link to="/app"><Rocket /> Launch Agent</Link>
         </Button>
       </nav>
     </header>

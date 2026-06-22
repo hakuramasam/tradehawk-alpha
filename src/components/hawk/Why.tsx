@@ -2,10 +2,10 @@ import { Section } from "./Section";
 import { Brain, Flame, Target, Users } from "lucide-react";
 
 const reasons = [
-  { icon: Brain, t: "AI That Actually Works", d: "Not a chatbot wrapper. A live, on-chain predator model trained on 5 years of whale wallet behavior.", gold: true },
-  { icon: Flame, t: "Meme Fuel ⚡", d: "Top-tier lore, weapons-grade memes, and a brand that prints itself across every timeline.", gold: false },
-  { icon: Users, t: "Swarm of Degens", d: "A horde of holders moving in formation. We don't sell. We circle. We feast together.", gold: true },
-  { icon: Target, t: "Alpha, Delivered", d: "Holders get real-time signals: wallet alerts, narrative shifts, rug warnings. Edge baked in.", gold: false },
+  { icon: Brain, t: "AI That Actually Trades", d: "Not a chatbot. An autonomous agent running real strategies on Base mainnet — momentum, smart-money, narrative.", gold: true },
+  { icon: Target, t: "Trending Base Alpha", d: "Continuous scan of Base DEX pairs and Clanker launches. Ranked by volume, liquidity, and whale activity.", gold: false },
+  { icon: Users, t: "Token-Gated Access", d: "Hold 100,000 $THAI in your wallet. Connect. Unlock signals, executions, and auto-mode. No subs, no logins.", gold: true },
+  { icon: Flame, t: "Holder Edge", d: "Wallet alerts, rug warnings, one-click swaps, opt-in auto-execute with risk caps. The hawk eats first.", gold: false },
 ];
 
 export const Why = () => (

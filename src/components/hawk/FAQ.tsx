@@ -2,12 +2,13 @@ import { Section } from "./Section";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Is $HAWK actually an AI?", a: "The lore is built around an autonomous on-chain predator. The token is a community-powered meme coin on Pump.fun. The brand, the swarm, and the holder-only signals are real — the magic is the community." },
-  { q: "How do I buy $HAWK?", a: "Grab a Solana wallet (Phantom or Backpack), fund it with SOL, head to Pump.fun, search $HAWK, and ape. Liquidity burns once we bond." },
-  { q: "Is the contract safe?", a: "Fair launch on Pump.fun means no mint authority, no freeze authority, and liquidity is burned on bonding. Always verify the contract address from our official X." },
-  { q: "What's the supply?", a: "1,000,000,000 $HAWK. No team allocation tricks. No hidden wallets. The swarm sees everything." },
-  { q: "Will there be a CEX listing?", a: "If the swarm flies hard enough, the exchanges come to us. We don't beg — we hunt." },
-  { q: "Is this financial advice?", a: "Absolutely not. $HAWK is a meme coin. Memes are volatile. The hawk is brutal. Only ape what you can afford to feed to the predator." },
+  { q: "What is TradeHawk AI?", a: "TradeHawk AI is an autonomous trading agent for Base mainnet. It scans trending tokens, runs multi-strategy alpha hunting (momentum, smart-money copy, narrative surge), and surfaces ranked trade signals to its holders." },
+  { q: "What is $THAI and why do I need it?", a: "$THAI (TradeHawk AI Token) is the access key. The agent dashboard and signals are gated to wallets holding at least 100,000 $THAI on Base. Connect your wallet at /app to check access." },
+  { q: "How do I buy $THAI?", a: "Use any Base-compatible wallet (Rainbow, MetaMask, Coinbase Wallet) with ETH on Base, then buy $THAI on Clanker. Contract: 0x00c605b6515A8509974391FCFd34014c78107B07." },
+  { q: "How does the agent execute trades?", a: "Mode A (default): the agent surfaces signals; you click 'Execute' and your wallet signs a 0x/Uniswap swap on Base — full custody, full control. Mode B (opt-in, coming soon): you authorize a session key with strict risk caps for hands-off execution." },
+  { q: "Is my wallet safe? Can the agent drain me?", a: "Signal mode requires per-trade signature in your wallet — the agent can never move funds without your approval. Auto-execute mode uses an isolated session key you fund and cap; the agent can never touch your main wallet." },
+  { q: "What chain does the agent trade on?", a: "Base mainnet only at launch. BSC and Solana are on the roadmap (Phase 04)." },
+  { q: "Is this financial advice?", a: "No. TradeHawk AI is software for on-chain analytics and trade execution. Crypto trading is high-risk; signals can be wrong; you can lose money. Only deploy what you can afford to lose." },
 ];
 
 export const FAQ = () => (
