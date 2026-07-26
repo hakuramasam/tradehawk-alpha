@@ -40,7 +40,7 @@ function summarizeArgs(args: Record<string, unknown>): string {
 }
 
 async function main() {
-  let config: AgentConfig;
+  let config!: AgentConfig;
   try {
     config = loadConfig();
   } catch (err: any) {
