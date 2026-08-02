@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://tradehawk-alpha-nest.lovable.app/sitemap.xml

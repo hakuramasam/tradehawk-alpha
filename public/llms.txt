@@ -1,0 +1,10 @@
+# TradeHawk AI
+
+> TradeHawk AI is an autonomous AI trading agent for Base mainnet. Holding $THAI (TradeHawk AI Token) unlocks live alpha signals, trending-token scans, and one-click swaps.
+
+TradeHawk AI runs multi-strategy alpha hunting — momentum breakout, smart-money copy, and narrative surge — across trending tokens on Base. Access to the agent dashboard is token-gated: wallets must hold at least 100,000 $THAI. Contract: 0x00c605b6515A8509974391FCFd34014c78107B07 (Base).
+
+## Pages
+
+- [Home](/): What TradeHawk AI is, how the agent hunts alpha, $THAI tokenomics, roadmap, and FAQ.
+- [Agent dashboard](/app): Token-gated dashboard with live signals, trending radar, and wallet connect.
