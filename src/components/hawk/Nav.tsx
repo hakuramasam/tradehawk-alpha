@@ -25,7 +25,7 @@ export const Nav = () => {
     <header className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? "bg-background/80 backdrop-blur-xl border-b border-primary/20" : "bg-transparent"}`}>
       <nav className="container flex items-center justify-between h-16 md:h-20">
         <a href="#top" className="flex items-center gap-2 group">
-          <img src={logo} alt="TradeHawk logo" width={40} height={40} className="w-10 h-10 group-hover:rotate-12 transition-transform" />
+          <img src={logo} alt="TradeHawk AI logo: golden cybernetic hawk head" width={40} height={40} className="w-10 h-10 group-hover:rotate-12 transition-transform" />
           <span className="font-display font-black text-xl tracking-tight">
             TRADE<span className="text-gradient-gold">HAWK AI</span>
           </span>

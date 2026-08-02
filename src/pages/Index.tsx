@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Nav } from "@/components/hawk/Nav";
 import { Hero } from "@/components/hawk/Hero";
 import { Ticker } from "@/components/hawk/Ticker";
@@ -11,6 +12,9 @@ import { Footer } from "@/components/hawk/Footer";
 
 const Index = () => (
   <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <Helmet>
+      <link rel="canonical" href="https://tradehawk-alpha-nest.lovable.app/" />
+    </Helmet>
     <Nav />
     <main>
       <Hero />

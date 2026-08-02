@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { useAccount } from "wagmi";
 import { useThaiBalance } from "@/hooks/useThaiBalance";
 import { HawkConnectButton } from "@/components/hawk/ConnectButton";
@@ -77,7 +78,7 @@ const Shell = ({ children }: { children: React.ReactNode }) => (
     <header className="relative border-b border-primary/20 bg-background/70 backdrop-blur-xl sticky top-0 z-40">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="TradeHawk AI" width={36} height={36} className="w-9 h-9" />
+          <img src={logo} alt="TradeHawk AI logo: golden cybernetic hawk head" width={36} height={36} className="w-9 h-9" />
           <div className="flex flex-col leading-none">
             <span className="font-display font-black tracking-tight">
               TRADE<span className="text-gradient-gold">HAWK AI</span>
@@ -277,7 +278,7 @@ const Dashboard = ({ holdings }: { holdings: number }) => (
           <Zap className="w-5 h-5" />
         </div>
         <div className="flex-1">
-          <h3 className="font-display font-bold text-xl mb-1">Auto-execute mode</h3>
+          <h2 className="font-display font-bold text-xl mb-1">Auto-execute mode</h2>
           <p className="text-sm text-muted-foreground mb-4 max-w-2xl">
             Generate a session key, fund a sandbox wallet, and let the hawk execute within your
             risk caps (max per trade, daily cap, allowed tokens). Disabled by default — flipping
@@ -319,6 +320,26 @@ const AgentApp = () => {
 
   return (
     <Shell>
+      <Helmet>
+        <title>TradeHawk AI Agent Dashboard — Live Base Alpha Signals</title>
+        <meta
+          name="description"
+          content="Token-gated TradeHawk AI dashboard: live Base mainnet alpha signals, trending-token radar, and one-click swaps for wallets holding $THAI."
+        />
+        <link rel="canonical" href="https://tradehawk-alpha-nest.lovable.app/app" />
+        <meta property="og:title" content="TradeHawk AI Agent Dashboard — Live Base Alpha Signals" />
+        <meta
+          property="og:description"
+          content="Connect a $THAI-holding wallet to unlock live Base alpha signals, smart-money copy, and narrative surge scans."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tradehawk-alpha-nest.lovable.app/app" />
+        <meta name="twitter:title" content="TradeHawk AI Agent Dashboard — Live Base Alpha Signals" />
+        <meta
+          name="twitter:description"
+          content="Connect a $THAI-holding wallet to unlock live Base alpha signals and trending-token radar."
+        />
+      </Helmet>
       {!isConnected && (
         <Gate
           title={
