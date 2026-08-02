@@ -5,7 +5,7 @@ export const Footer = () => (
     <div className="container py-12 grid md:grid-cols-3 gap-8">
       <div className="space-y-3">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="TradeHawk AI logo" width={36} height={36} className="w-9 h-9" loading="lazy" />
+          <img src={logo} alt="TradeHawk AI logo: golden cybernetic hawk head" width={36} height={36} className="w-9 h-9" loading="lazy" />
           <span className="font-display font-black text-lg">TRADE<span className="text-gradient-gold">HAWK AI</span></span>
         </div>
         <p className="text-sm text-muted-foreground max-w-xs">Autonomous AI trading agent on Base mainnet. Gated by $THAI. Hunting trending alpha 24/7.</p>

@@ -78,7 +78,7 @@ const Shell = ({ children }: { children: React.ReactNode }) => (
     <header className="relative border-b border-primary/20 bg-background/70 backdrop-blur-xl sticky top-0 z-40">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="TradeHawk AI" width={36} height={36} className="w-9 h-9" />
+          <img src={logo} alt="TradeHawk AI logo: golden cybernetic hawk head" width={36} height={36} className="w-9 h-9" />
           <div className="flex flex-col leading-none">
             <span className="font-display font-black tracking-tight">
               TRADE<span className="text-gradient-gold">HAWK AI</span>
